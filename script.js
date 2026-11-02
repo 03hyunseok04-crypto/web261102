@@ -1,7 +1,5 @@
 const titles = ["인터스텔라", "기생충", "쇼생크 탈출", "어벤져스: 엔드게임", "센과 치히로의 행방불명"];
-
 const ratings = [8.4, 8.5, 8.7, 8.3, 8.5];
-
 const years = [2014, 2019, 1994, 2019, 2001];
 
 let sum = 0;
@@ -16,13 +14,14 @@ console.log("합계:", sum);
 const average = sum / ratings.length;
 console.log("평균:", average);
 
-
 let max = ratings[0];
 let maxIndex = 0;
+
 
 let count = 0;
 
 for (let i = 0; i < ratings.length; i++) {
+
     if (ratings[i] > max) {
         max = ratings[i];
         maxIndex = i;
